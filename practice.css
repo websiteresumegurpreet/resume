@@ -1,0 +1,294 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+html,
+body {
+
+    height: 100%;
+    width: 100%;
+
+    overflow: hidden;
+
+
+}
+
+#main {
+
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.169);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+#upper {
+
+    height: 60px;
+    width: 100vw;
+    border-bottom: 2px solid green;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    background-color: rgba(51, 128, 0, 0.438);
+
+
+}
+
+#upper img {
+
+    height: 100px;
+    width: 100px;
+
+    background-position: center;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all linear 0.3s;
+
+}
+
+#upper h1 {
+
+    font-size: 5vw;
+
+    text-transform: uppercase;
+    color: transparent;
+    position: relative;
+    z-index: 9;
+    mix-blend-mode: difference;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+}
+
+#m {
+
+    width: 100%;
+    height: 5%;
+    background-color: green;
+
+
+
+
+
+}
+
+#m h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+    line-height: 40px;
+
+}
+
+.blink {
+    animation: blinker 1.5s linear infinite;
+    color: red;
+    font-family: sans-serif;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+#part1 {
+
+    height: 100%;
+    width: 28%;
+    background-color: red;
+
+}
+
+#overlay {
+
+    height: 100%;
+    width: 100%;
+    background-color: rgba(157, 144, 223, 0.112);
+}
+
+#part2 {
+
+    height: 100%;
+    width: 68%;
+    background-color: rgba(255, 255, 0, 0);
+    background-image: url(https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bW9kZWxzfGVufDB8fDB8fHww);
+    background-position: center;
+    background-size: cover;
+    transition: all ease 0.5s;
+    overflow: hidden;
+
+
+}
+
+#part2:hover {
+
+    scale: 1.1;
+
+}
+
+#part3 {
+
+    height: 100%;
+    width: 7%;
+
+
+    background-color: green
+}
+
+#text-div {
+
+
+
+    width: 400px;
+
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(0, -50%);
+
+
+}
+
+
+
+#text-div>h1 {
+
+    font-family: gilroy;
+    font-weight: 900;
+    font-size: 65px;
+    color: white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 65px;
+
+
+}
+
+#small-img-div {
+
+    height: 350px;
+    width: 250px;
+
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+    background-image: url("https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all ease 0.5s;
+
+}
+
+#small-img-div:hover {
+
+    scale: 1.1;
+
+}
+
+#overlay-img {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(144, 223, 174, 0);
+
+
+
+}
+
+#vertical-text h1 {
+    position: absolute;
+
+    right: -21%;
+    transform: rotate(90deg);
+    transform-origin: 0%, 0%;
+    z-index: 5;
+}
+
+#vertical-text h1 {
+    animation: blinker 2.5s linear infinite;
+    color: red;
+    font-family: monument;
+}
+
+@keyframes vertical-text {
+    50% {
+        opacity: 0;
+    }
+}
+
+
+
+#vertical-text h1 {
+
+    font-size: 70px;
+    font-weight: 900;
+    font-family: monument;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    color: transparent;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+
+
+}
+
+#nav {
+
+    position: absolute;
+    width: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    left: 20%;
+    top: 5%;
+}
+
+#nav img {
+
+    height: 40px;
+
+}
+
+#nav img {
+    animation: blinker 1.5s linear infinite;
+    color: red;
+    font-family: gilroy;
+}
+
+@keyframes nav {
+    50% {
+        opacity: 1;
+    }
+}
+
+#nav h5 {
+
+    font-size: 20px;
+    font-family: gilroy;
+    color: white;
+    letter-spacing: 5px;
+}
